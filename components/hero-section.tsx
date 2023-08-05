@@ -21,7 +21,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900 max-w-6xl">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <a
           href="#"
