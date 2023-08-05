@@ -1,9 +1,15 @@
-import { allPosts } from "@/.contentlayer/generated"
-import Link from "next/link"
+import { allPosts } from "@/.contentlayer/generated";
+import { Hero } from "@/components/hero-section";
+import PricingPage from "@/components/pricing-page";
+import Testimonials from "@/components/testimonials";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="prose dark:prose-invert">
+      <Hero />
+      <Testimonials />
+      <PricingPage />
       {allPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
@@ -13,5 +19,5 @@ export default function Home() {
         </article>
       ))}
     </div>
-  )
+  );
 }
