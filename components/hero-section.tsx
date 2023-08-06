@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export function Hero() {
   const { setTheme, theme } = useTheme();
@@ -21,8 +22,8 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="bg-white dark:bg-gray-900 max-w-6xl">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+    <section className="flex flex-row bg-white dark:bg-gray-900 max-w-6xl lg:h-screen">
+      <div className="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-32 lg:px-12 items-center flex flex-col ">
         <a
           href="#"
           className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -86,6 +87,15 @@ export function Hero() {
             Video
           </a>
         </div>
+      </div>
+      <div className="pt-8 mx-auto max-w-screen-xl text-center lg:pt-16 ">
+        <Image
+          className="w-screen hidden sm:block"
+          src="/bg_3.jpeg"
+          width={500}
+          height={500}
+          alt="Picture of the author"
+        />
       </div>
     </section>
   );
