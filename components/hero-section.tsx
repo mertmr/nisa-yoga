@@ -8,10 +8,7 @@ export function Hero() {
   const { setTheme, theme } = useTheme();
   const [current, setCurrent] = useState(0);
 
-  const images = [
-    "https://images.unsplash.com/photo-1604014472507-ff028430732b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80",
-    "https://images.unsplash.com/photo-1594325624708-75a0a6cf806f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-  ];
+  const images = ["/bg8.jpeg", "/bg_3.jpeg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,8 +19,8 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="flex flex-row bg-white dark:bg-gray-900 max-w-6xl lg:h-screen">
-      <div className="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-32 lg:px-12 items-center flex flex-col ">
+    <section className="flex flex-row max-w-6xl">
+      <div className="px-4 lg:px-12 mx-auto max-w-xl text-center  items-center flex flex-col h-[calc(100vh-3rem)] justify-center">
         <a
           href="#"
           className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -46,12 +43,14 @@ export function Hero() {
             ></path>
           </svg>
         </a>
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-4 text-6xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Davranış Terapisi
         </h1>
-        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-16 dark:text-gray-400 ">
           Olumsuz düşünce ve davranış kalıplarını değiştirerek daha sağlıklı bir
-          yaşam tarzına adım atın.
+          yaşam tarzına adım atın. Davranış terapisi, zihinsel ve duygusal
+          iyilik halinizi artırmanıza, olumlu ilişkiler kurmanıza ve günlük
+          yaşamınızı daha tatmin edici hale getirmenize yardımcı olabilir.
         </p>
         <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
@@ -88,10 +87,10 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <div className="pt-8 mx-auto max-w-screen-xl text-center lg:pt-16 ">
+      <div className=" mx-auto max-w-screen-xl text-center pr-4 lg:pr-12 items-center flex">
         <Image
-          className="w-screen hidden sm:block"
-          src="/bg_3.jpeg"
+          className="w-screen hidden sm:block rounded-full"
+          src={images[current]}
           width={500}
           height={500}
           alt="Picture of the author"
