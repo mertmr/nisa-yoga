@@ -12,7 +12,7 @@ import { Sidebar } from "@/components/sidebar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Nefes Koclugu",
+  title: "Terapi",
   description: "Davranis Terapisi",
 };
 
