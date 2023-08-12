@@ -68,15 +68,14 @@ function Sidebar() {
         <div className="h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800">
           <div className="flex flex-row">
             <div className="pt-6">
-            <Image
-          className="w-screen hidden sm:block rounded-full"
-          src="/logo.png"
-          width={500}
-          height={500}
-          alt="Picture of the author"
-        />
+              <Image
+                className="w-screen rounded-full"
+                src="/logo.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
             </div>
-            
           </div>
           <hr className="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
           <ul className="space-y-2 font-medium">
