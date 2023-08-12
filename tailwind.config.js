@@ -8,6 +8,9 @@ module.exports = {
   darkMode: ["class"],
   theme: {
     extend: {
+      backgroundImage: {
+        "bgi": "url('/17580.webp')",
+      },
       colors: {
         primary: {
           50: "#eff6ff",
