@@ -8,7 +8,7 @@ export function Hero() {
   const { setTheme, theme } = useTheme();
   const [current, setCurrent] = useState(0);
 
-  const images = ["/bg8.jpeg", "/bg_3.jpeg"];
+  const images = ["/bg8.webp", "/bg_2.webp"];
 
   useEffect(() => {
     const interval = setInterval(() => {
