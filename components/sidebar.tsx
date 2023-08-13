@@ -70,9 +70,9 @@ function Sidebar() {
             <div className="pt-6">
               <Image
                 className="w-screen rounded-full"
-                src="/logo.png"
-                width={500}
-                height={500}
+                src="/logo.webp"
+                width={232}
+                height={232}
                 alt="Picture of the author"
               />
             </div>
