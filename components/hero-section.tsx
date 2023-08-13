@@ -93,6 +93,7 @@ export function Hero() {
           src={images[current]}
           width={500}
           height={500}
+          priority
           alt="Picture of the author"
         />
       </div>

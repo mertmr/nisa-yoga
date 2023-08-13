@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Pricing",
@@ -14,9 +15,12 @@ export default function Testimonials() {
       <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
         <div className="mb-12 md:mb-0">
           <div className="mb-6 flex justify-center">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+            <Image
               className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+              src="/img%20(1).webp"
+              width={500}
+              height={500}
+              alt="Picture of the author"
             />
           </div>
           <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
@@ -102,9 +106,12 @@ export default function Testimonials() {
         </div>
         <div className="mb-12 md:mb-0">
           <div className="mb-6 flex justify-center">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+            <Image
               className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+              src="/img%20(2).webp"
+              width={500}
+              height={500}
+              alt="Picture of the author"
             />
           </div>
           <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
@@ -190,9 +197,12 @@ export default function Testimonials() {
         </div>
         <div className="mb-0">
           <div className="mb-6 flex justify-center">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+            <Image
               className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+              src="/img%20(9).webp"
+              width={500}
+              height={500}
+              alt="Picture of the author"
             />
           </div>
           <h5 className="mb-2 text-lg font-bold">John Smith</h5>
